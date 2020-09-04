@@ -1,0 +1,69 @@
+//颜色
+@main: #b08351;
+@ccc: #ccc;
+@f5f5f5: #f5f5f5;
+
+// 盒子宽高
+.size(@w, @h) { width: @w; height: @h}
+
+// 高度
+.heigth(@h) { height: @h}
+
+// 宽度
+.width(@w) {width: @w;}
+
+// 行高
+.lh(@lh: 1.5em) { line-height: @lh;}
+
+// 内填充（上下左右）
+.padding(@p) { padding: @p; }
+
+// 内填充你（左右 or 上下）
+.padding-1(@lr: 0, @tb: 0) { padding: @lr @tb; }
+
+// 外填充（上下左右）
+.margin(@m) { margin: @m; }
+
+// 内填充你（左右 or 上下）
+.margin-1(@lr: 0, @tb: 0) { margin: @lr @tb; }
+
+// 文字、图片居中
+.center(text-x) {text-align: center;}
+.center(text-y) {display: table-cell; vertical-align: middle;}
+
+// 字体大小
+.fs(@fs) {font-size: @fs;}
+
+// 字体颜色，包括连接与非连接
+.color(@color) { color: @color;}
+
+// 背景颜色
+.bg(@bg) {background: @bg}
+
+// 背景渐变
+.bg-gradient( @c1: #eee, @c2: #999, @direction: right) { background: linear-gradient(to @direction, @c1, @c2);}
+
+// 元素垂直水平居中
+.center() { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+ // 文本渐变
+.font-gradient(@c1: #eee, @c2: #999, @direction: right){
+  background: linear-gradient(to @direction, @c1, @c2);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+// 禁止换行，文本溢出省略号（一行）
+.ellipsis() {
+  white-space: normal; // 设置文字在一行显示，不能换行
+  word-wrap: break-word;
+  word-break: break-all;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis; // 规定当文本溢出时，显示省略符号来代表被修剪的文本
+}
+
+// 文本溢出省略号显示（多行）
+.ellipsis-mult(@n: 3) { display: -webkit-box; overflow: hidden; -webkit-line-clamp: @n; -webkit-box-orient: vertical;}

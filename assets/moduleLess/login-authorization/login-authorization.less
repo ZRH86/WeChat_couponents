@@ -1,0 +1,62 @@
+@import "../../less/style.less";
+.login-mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  .width(100%);
+  .bg(rgba(0, 0, 0, .5));
+  z-index: 99;
+  .login-tip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .width(70%);
+    .bg(#fff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    .login-tip-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .padding-1(20rpx, 30rpx);
+      .login-tip-text {
+        .lh();
+        .fs(30rpx);
+      }
+      .login-image {
+        .width(400 rpx);
+      }
+    }
+  }
+  .login-tip-btn{
+    display: flex;
+    width: 100%;
+    .button{
+      position: relative;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .heigth(80rpx);
+      .color(#666);
+      border: 1rpx solid #eee;
+      button{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+    .active{
+      .color(#b08351);
+      border-left: 1rpx solid #eee;
+    }
+  }
+}

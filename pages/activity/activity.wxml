@@ -1,0 +1,22 @@
+<view class="container">
+    <zhuanpan id='zhuanpan' 
+        bind:myData='getData' 
+        bind:myAwards="getAwards" 
+        bind:startZhuan="startZhuan" 
+        probability='{{true}}'
+        size='{{size}}' 
+        musicflg='{{musicflg}}' 
+        fastJuedin='{{fastJuedin}}' 
+        repeat='{{repeat}}' 
+        zhuanpanArr='{{xiaojuedingArr}}' 
+        awardsConfig='{{awardsConfig}}'>
+    </zhuanpan>
+    <!-- <view style='width:100%;margin:5px;text-align:center;'>
+        转盘声音 <switch type='switch' bindchange="switch1Change1"/>
+        不重复抽取 <switch type='switch' bindchange="switch1Change2"/>
+    </view>
+    <view style='width:100%;margin:5px;text-align:center;'>
+        快速决定 <switch type='switch' bindchange="switch1Change3"/>
+        概率 <switch type='switch' bindchange="switch1Change4"/>
+    </view> -->
+</view>

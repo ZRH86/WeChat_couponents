@@ -1,0 +1,60 @@
+<view class="home-container">
+    <view class="home">
+        <view class="home-header flex-center-center">
+            <view class="home-header-item pt30 pr30 pb20 pl30">
+                <view class="user-info pb20">
+                    <view class="user-info-head pr20" hover-class="none" hover-stop-propagation="false">
+                        <image src="https://wx.qlogo.cn/mmopen/vi_32/a2G20RAuIMOjLBa9dDYfICADAIuqiciaM2gfpYr1jD1sgiaDITdYWFLAToXuzPbPFhhxEOjeAZxibq8lYoNgicDnunw/132" />
+                    </view>
+                    <view class="user-info-name" hover-class="none" hover-stop-propagation="false">
+                        <view class="user-name">姓名啊</view>
+                        <view class="user-post fs26">(职位呀~)</view>
+                    </view>
+                    <image class="edit-info" src="../../image/home/edit.png" bindtap="toEditCard" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+                <view class="trigger-number pt20" hover-class="none" hover-stop-propagation="false">
+                    <view class="trigger-number-item flex-center-center" wx:for="{{triggerNumber}}" wx:key="item">
+                        <view class="fs34 pb10">
+                            {{item.num}}
+                        </view>
+                        <view class="fs20 f-color-666">
+                            {{item.title}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <login-authorization id="login_authorization"></login-authorization>
+        <view class="home-shortcut pl20 pr20 pt20" hover-class="none" hover-stop-propagation="false">
+            <view class="home-shortcut-item" bindtap="click">
+                <image class="" src="../../image/home/btn1.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            </view>
+            <view class="home-shortcut-item">
+                <image class="" src="../../image/home/btn3.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            </view>
+            <view class="home-shortcut-item">
+                <image class="" src="../../image/home/btn2.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            </view>
+        </view>
+        <view class="home-clue pl40 pr40">
+            <tab-nav-roll tabData="{{tabData}}" tabType="{{tabType}}" bindincrement="homeTabChange"></tab-nav-roll>
+        </view>
+        <scroll-y class="scroll-view" pull="{{pull}}" push="{{push}}" listLength="{{clueData.length}}" bindrefresh="refresh" bindtoload="toload">
+            <view class="home-clue-list pb20 pr40 pl40" wx:for="{{clueData}}" wx:for-item="item" wx:for-index="key" wx:key="key" bindtap="toCustomerDetails">
+                <view class="home-clue-list-time f-color-ccc fs26 pb20">
+                    {{item.time}}
+                </view>
+                <view class="home-clue-list-item pt20 pr20 pb20 pl20">
+                    <view class="home-clue-list-item-img pr40">
+                        <image src="https://wx.qlogo.cn/mmopen/vi_32/a2G20RAuIMOjLBa9dDYfICADAIuqiciaM2gfpYr1jD1sgiaDITdYWFLAToXuzPbPFhhxEOjeAZxibq8lYoNgicDnunw/132" />
+                    </view>
+                    <view class="home-clue-list-item-info pr40">
+                        <view class="home-clue-list-item-info-name fs30 mt10">客户名</view>
+                        <view class="home-clue-list-item-info-msg fs26">查看了你的名片，沟通从此刻开始。</view>
+                        <icon class="icon-right cuIcon-right"></icon>
+                    </view>
+                </view>
+            </view>
+        </scroll-y>
+    </view>
+</view>

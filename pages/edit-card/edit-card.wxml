@@ -1,0 +1,61 @@
+<view class="container">
+    <form class="user-info-form" bindsubmit='submitForm'>
+        <view>
+            <!-- <view wx:for="{{basicInfo}}" wx:for-index="key" wx:for-item="value" wx:key="key">
+                {{key}} : {{basicInfo[key]}}
+            </view> -->
+            <view class="edit-card-title">基本信息</view>
+            <view class="basic-info h90">
+                <view class="basic-info-label">手机</view><input class="basic-info-input" placeholder-class="placeholder-color" type="number" placeholder="请填写手机号" name="tel" bindblur="formChange" data-val="tel"/>
+            </view>
+            <view class="basic-info h90">
+                <view class="basic-info-label">职位</view><input class="basic-info-input" placeholder-class="placeholder-color" placeholder="请填写职位" name="post" bindblur="formChange" data-val="post"/>
+            </view>
+            <view class="basic-info h90">
+                <view class="basic-info-label">微信</view><input class="basic-info-input" placeholder-class="placeholder-color" placeholder="请填写微信号" name="weChat" bindblur="formChange" data-val="weChat"/>
+            </view>
+            <view class="basic-info h90">
+                <view class="basic-info-label">座机</view><input class="basic-info-input" placeholder-class="placeholder-color" placeholder="请填写座机号" name="specialPlane" bindblur="formChange" data-val="specialPlane"/>
+            </view>
+            <view class="basic-info h90">
+                <view class="basic-info-label">邮箱</view><input class="basic-info-input" placeholder-class="placeholder-color" placeholder="请填写电子邮箱地址" name="email" bindblur="formChange" data-val="email"/>
+            </view>
+        </view>
+        <!-- <view>
+            <view class="edit-card-title">名片头像</view>
+            <view class="basic-info pt30 pb30">
+                <view class="select-image" bindtap="">
+                    <image class="icon_add" src="../../image/common/icon_add.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+            </view>
+        </view>
+        <view>
+            <view class="edit-card-title">个人简介</view>
+            <view class="basic-info pt30 pb30">
+                <textarea class="basic-info-input" placeholder-class="placeholder-color" placeholder="请输入个人简介" name="intro" bindblur="formChange" data-val="intro"></textarea>
+            </view>
+        </view>
+        <view>
+            <view class="edit-card-title">我的照片</view>
+            <view class="basic-info pt30 pb30 image-list">
+                <view class="select-image">
+                    <image class="icon_add" src="../../image/common/icon_add.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+            </view>
+        </view>
+        <view>
+            <view class="edit-card-title">我的视频</view>
+            <view class="basic-info pt30 pb30">
+                <view class="select-image wh">
+                    <image class="icon_add" src="../../image/common/icon_add.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+            </view>
+        </view> -->
+        <view>
+            <!-- <view class="edit-card-title">我的视频</view> -->
+            <view class="basic-info pt30 pb30">
+                <button class="save" form-type='submit' hover-class="none">保存</button>
+            </view>
+        </view>
+    </form>
+</view>

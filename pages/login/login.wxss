@@ -1,0 +1,70 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-sbetween;
+}
+
+.logo {
+    width: 240rpx;
+    height: 240rpx;
+    margin-top: 60rpx;
+}
+
+.logo image {
+    width: 100%;
+    height: 100%;
+}
+
+.user-info {
+    width: 100%;
+    margin-top: 80rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info-form {
+    width: 75%;
+}
+
+.user-info-item {
+    margin-bottom: 20rpx;
+    box-sizing: border-box;
+}
+
+.login-title {
+    font-size: 32rpx;
+    color: #ccc;
+}
+
+input {
+    width: 100%;
+    height: 80rpx;
+    border-bottom: 1rpx solid #eee;
+    padding: 10rpx 20rpx;
+}
+
+.placeholder {
+    color: #eee;
+    font-size: 20rpx;
+}
+
+.login-button {
+    margin-top: 50rpx;
+}
+
+button {
+    height: 80rpx;
+    line-height: 80rpx;
+    background: linear-gradient(to right, #ddbf93, #b08351);
+    color: #fff;
+    font-size: 32rpx;
+}
+
+button::after {
+    border: none;
+}

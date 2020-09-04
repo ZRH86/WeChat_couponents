@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/home/home",
+    "pages/goods/goods",
+    "pages/client-pool/client-pool",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/edit-card/edit-card",
+    "pages/activity/activity"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#b08351",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "image/tabbar/home_checked.png",
+        "iconPath": "image/tabbar/home_unchecked.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/tabbar/goods_checked.png",
+        "iconPath": "image/tabbar/goods_uncheck.png",
+        "pagePath": "pages/activity/activity",
+        "text": "商品"
+      },
+      {
+        "selectedIconPath": "image/tabbar/client_checked.png",
+        "iconPath": "image/tabbar/client_unchecked.png",
+        "pagePath": "pages/client-pool/client-pool",
+        "text": "客户"
+      },
+      {
+        "selectedIconPath": "image/tabbar/msg_checked.png",
+        "iconPath": "image/tabbar/msg_unchecked.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "image/tabbar/center_checked.png",
+        "iconPath": "image/tabbar/center_unchecked.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

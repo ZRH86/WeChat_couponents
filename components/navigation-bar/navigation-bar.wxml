@@ -1,0 +1,14 @@
+<view class="custom" style="padding-top:{{ statusBarHeight }}px; background: {{ bg }};">
+  <view class='title-container'>
+    <view class='capsule' wx:if="{{ back || home }}">
+      <view bindtap='back' wx:if="{{back}}">
+        <label class='iconfont icon-back'></label>
+      </view>
+      <view bindtap='backHome' wx:if="{{home}}">
+        <label class='iconfont icon-home'></label>
+      </view>
+    </view>
+    <view class='title'>{{ navigationBarTitle }}</view>
+  </view>
+</view>
+<view class="empty_custom" style="padding-top:{{ statusBarHeight }}px;"></view>

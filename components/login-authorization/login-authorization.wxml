@@ -1,0 +1,15 @@
+<view class="container">
+  <cover-view class="login-mask" wx:if="{{isshowModal}}" animation="{{animationMask}}">
+    <cover-view class="login-tip" wx:if="{{isshowModal}}">
+      <cover-view class="login-tip-content">
+        <cover-view class="login-tip-text">你还未登录哦！</cover-view>
+        <cover-view class="login-tip-text">请先登录再进行操作</cover-view>
+        <cover-image class="login-image" src="{{loginBoxImg}}"></cover-image>
+      </cover-view>
+      <cover-view class="login-tip-btn">
+        <cover-view class="button" bindtap="hideModal">暂不登录</cover-view>
+        <cover-view class="button active">立即登录<button class="get-user-info" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo"></button></cover-view>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</view>

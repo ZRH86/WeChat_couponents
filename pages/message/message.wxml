@@ -1,0 +1,26 @@
+<view class="container">
+    <scroll-y class="scroll-view" pull="{{pull}}" push="{{push}}" listLength="{{clueData.length}}" bindrefresh="refresh" bindtoload="toload">
+        <view class="message pl40 pr40">
+            <view class="message-item pt20 pb20" wx:for="{{messageList}}" wx:for-index="key" wx:for-item="item" wx:key="key" bindtap="toCustomerDetails">
+                <view class="message-head pr20">
+                    <image src="https://wx.qlogo.cn/mmopen/vi_32/a2G20RAuIMOjLBa9dDYfICADAIuqiciaM2gfpYr1jD1sgiaDITdYWFLAToXuzPbPFhhxEOjeAZxibq8lYoNgicDnunw/132" />
+                    <view class="unread"></view>
+                </view>
+                <view class="message-referral">
+                    <view class="message-referral-1 lh1-5">
+                        <view class="message-referral-name uniline">客户名</view>
+                        <view class="message-referral-time fs20 f-color-999">{{item.date}}</view>
+                    </view>
+                    <view class="message-word fs24 lh3 uniline">我对商品有意向，请联系我！我对商品有意向，请联系我！我对商品有意向，请联系我！</view>
+                </view>
+                <view class="message-icon-right">
+                    <image class="icon-right" src="../../image/common/icon_right.png" />
+                </view>
+            </view>
+        </view>
+    </scroll-y>
+    <view class="message-tip">
+        <image src="../../image/message/tip.png" mode="widthFix"></image>
+        <view class="message-tip-text"><view>微信提醒</view><view>剩余<view>121</view>次</view><view>点我增加</view></view>
+    </view>
+</view>

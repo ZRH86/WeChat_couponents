@@ -1,0 +1,166 @@
+.home-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f5f5f5 url('https://mkmarketing.oss-cn-hangzhou.aliyuncs.com/Marketing/NameCard/source/image/sales_banner.jpg') no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+
+.home {
+    /* height: 200rpx; */
+    display: flex;
+    flex-direction: column;
+}
+
+.home-header {
+    width: 100%;
+    height: 350rpx;
+}
+
+.home-header-item {
+    width: 90%;
+    height: 320rpx;
+    margin-top: 40rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    box-sizing: border-box;
+    box-shadow: 2rpx 10rpx 20rpx #ccc;
+}
+
+.user-info {
+    position: relative;
+    display: flex;
+}
+
+.user-info-head {
+    box-sizing: border-box;
+}
+
+.user-info-head image {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 500rpx;
+    border: 4rpx solid #fff;
+    box-shadow: 2rpx 10rpx 20rpx #ccc;
+}
+
+.user-name {
+    line-height: 80rpx;
+}
+
+.user-post {
+    line-height: 40rpx;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #ddbf93, #b08351);
+}
+
+.edit-info {
+    width: 150rpx;
+    height: 50rpx;
+    position: absolute;
+    top: -30rpx;
+    right: -30rpx;
+}
+
+.trigger-number {
+    display: flex;
+    border-top: 2rpx solid #eee;
+}
+
+.trigger-number-item {
+    flex: 1;
+}
+
+.home-shortcut {
+    display: flex;
+}
+
+.home-shortcut-item {
+    flex: 1;
+}
+
+.home-shortcut-item image {
+    width: 100%;
+    height: 110rpx;
+}
+
+.home-clue-nav {
+    position: relative;
+    border-bottom: 2rpx solid #ccc;
+}
+
+.scroll-view {
+    position: absolute;
+    top: 570rpx;
+    bottom: 0;
+    width: 100%;
+    flex: 1;
+}
+
+.home-clue-list-item {
+    display: flex;
+    background: #fff;
+    border-radius: 10rpx;
+    box-shadow: 2rpx 10rpx 20rpx #eee;
+}
+
+.home-clue-list-item-img image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 500rpx;
+    border: 3rpx solid #fff;
+    box-shadow: 2rpx 10rpx 20rpx #eee;
+    box-sizing: border-box;
+}
+
+.home-clue-list-item-info {
+    position: relative;
+    flex: 1;
+}
+
+.icon-right {
+    position: absolute;
+    top: 50%;
+    right: 10rpx;
+    transform: translateY(-50%);
+    width: 15rpx;
+    height: 30rpx;
+}
+
+.home-clue-list-item-info-msg {
+    line-height: 2em;
+}
+
+.shishi-bg {
+    width: 100%;
+    height: 400rpx;
+    position: relative;
+}
+
+.shishi-bg::after {
+    content: '';
+    width: 120%;
+    height: 300rpx;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 0 0 20% 20%;
+    background: rgb(116, 116, 255);
+}
+
+.shishi-bg-li {
+    position: absolute;
+    top: 50rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 350rpx;
+    background: blue;
+    border-radius: 30rpx;
+    z-index: 999;
+}

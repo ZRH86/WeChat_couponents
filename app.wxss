@@ -1,0 +1,341 @@
+/**app.wxss**/
+@import "./assets/wxss/icon.wxss";
+page {
+  height: 100%;
+  /* background-color:rgb(220, 253, 171); */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-sbetween; */
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+}
+
+.fs16 {
+  font-size: 16rpx;
+}
+
+.fs20 {
+  font-size: 20rpx;
+}
+
+.fs22 {
+  font-size: 22rpx;
+}
+
+.fs24 {
+  font-size: 24rpx;
+}
+
+.fs26 {
+  font-size: 26rpx;
+}
+
+.fs28 {
+  font-size: 28rpx;
+}
+
+.fs30 {
+  font-size: 30rpx;
+}
+
+.fs32 {
+  font-size: 32rpx;
+}
+
+.fs34 {
+  font-size: 34rpx;
+}
+
+.fs36 {
+  font-size: 36rpx;
+}
+
+.fs38 {
+  font-size: 38rpx;
+}
+
+.fs40 {
+  font-size: 40rpx;
+}
+
+.f-color-fff {
+  color: #fff;
+}
+
+.f-color-ccc {
+  color: #ccc;
+}
+
+.f-color-666 {
+  color: #666;
+}
+
+.f-color-999 {
+  color: #999;
+}
+
+.f-color-f5 {
+  color: #f5f5f5;
+}
+
+.f-color-main {
+  color: #b08351;
+}
+
+.pt6 {
+  padding-top: 6rpx;
+}
+
+.pr6 {
+  padding-right: 6rpx;
+}
+
+.pb6 {
+  padding-bottom: 6rpx;
+}
+
+.pl6 {
+  padding-left: 6rpx;
+}
+
+.pt10 {
+  padding-top: 10rpx;
+}
+
+.pr10 {
+  padding-right: 10rpx;
+}
+
+.pb10 {
+  padding-bottom: 10rpx;
+}
+
+.pl10 {
+  padding-left: 10rpx;
+}
+
+.pt30 {
+  padding-top: 30rpx;
+}
+
+.pr30 {
+  padding-right: 30rpx;
+}
+
+.pb30 {
+  padding-bottom: 30rpx;
+}
+
+.pl30 {
+  padding-left: 30rpx;
+}
+
+.pt20 {
+  padding-top: 20rpx;
+}
+
+.pr20 {
+  padding-right: 20rpx;
+}
+
+.pb20 {
+  padding-bottom: 20rpx;
+}
+
+.pl20 {
+  padding-left: 20rpx;
+}
+
+.pt40 {
+  padding-top: 40rpx;
+}
+
+.pr40 {
+  padding-right: 40rpx;
+}
+
+.pb40 {
+  padding-bottom: 40rpx;
+}
+
+.pl40 {
+  padding-left: 40rpx;
+}
+
+.mt10 {
+  margin-top: 10rpx;
+}
+
+.mr10 {
+  margin-right: 10rpx;
+}
+
+.mb10 {
+  margin-bottom: 10rpx;
+}
+
+.ml10 {
+  margin-left: 10rpx;
+}
+
+.mt30 {
+  margin-top: 30rpx;
+}
+
+.mr30 {
+  margin-right: 30rpx;
+}
+
+.mb30 {
+  margin-bottom: 30rpx;
+}
+
+.ml30 {
+  margin-left: 30rpx;
+}
+
+.mt20 {
+  margin-top: 20rpx;
+}
+
+.mr20 {
+  margin-right: 20rpx;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.ml20 {
+  margin-left: 20rpx;
+}
+
+.mt40 {
+  margin-top: 40rpx;
+}
+
+.mr40 {
+  margin-right: 40rpx;
+}
+
+.mb40 {
+  margin-bottom: 40rpx;
+}
+
+.ml40 {
+  margin-left: 40rpx;
+}
+
+.lh1-5 {
+  line-height: 1.5em;
+}
+
+.lh2 {
+  line-height: 2em;
+}
+
+.lh2-5 {
+  line-height: 2.5em;
+}
+
+.lh3 {
+  line-height: 3em;
+}
+
+.lh3-5 {
+  line-height: 3.5em;
+}
+
+.lh4 {
+  line-height: 4em;
+}
+
+
+/* 单行省略 */
+
+.uniline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* 多行省略 */
+
+.multi-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.multi-line-3 {
+  -webkit-line-clamp: 3;
+}
+
+.multi-line-4 {
+  -webkit-line-clamp: 4;
+}
+
+.flex-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 下划线 */
+
+.underline {
+  text-decoration: underline;
+  color: #647D9A;
+}
+
+
+/* 选择图片 */
+
+.select-image {
+  position: relative;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  border: 2rpx dashed transparent;
+  background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, #ccc 0, #ccc 0.25em, white 0, white 0.6em);
+}
+
+.icon_add {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.icon-right {
+  width: 14rpx;
+  height: 28rpx;
+}
+
+.icon-refresh {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.z-index-1 {
+  z-index: -1;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,76 @@
+<view class="container">
+    <view class="client-pool">
+        <view class="client-pool-search pt20 pr40 pl40">
+            <view class="client-pool-search-body pl20 pr20">
+                <icon type="search" size="16"/>
+                <input class="pl20" type="text" value="{{clientCondition.data.searchValue}}" placeholder="请输入姓名/电话" confirm-type="search" bindinput="searchChange" bindconfirm="bindconfirm"/>
+                <icon type="clear" size="14" hidden="{{!clientCondition.data.searchValue.length}}" bindtap="clearSearchValue"/>
+            </view>
+            <view class="client-pool-search-condition pt30 pb20">
+                <view class="client-pool-search-condition-left">
+                    <view class="fs28 pr40 f-color-666">
+                        <picker-element
+                            isShowPicker="{{isShow_01}}"
+                            bindsure="sureCallBack_01"
+                            bindcancle="cancleCallBack_01"
+                            scrollType="link"
+                            listData="{{sourceData}}"
+                            keyWordsOfShow="label"
+                            indicatorStyle="height:47px"
+                            titleText="自定义下拉框"
+                        >
+                        </picker-element>
+                        <view class="picker" bindtap="showPicker_01">
+                            来源<image class="select-black pl10" src="../../image/common/select_black.png" />
+                        </view>
+                        <!-- <picker bindchange="bindPickerChange" data-type="source" value="{{index}}" range="{{sourceData}}" range-key='label'>
+                            <view class="picker">
+                                来源<image class="select-black pl10" src="../../image/common/select_black.png" />
+                            </view>
+                        </picker> -->
+                    </view>
+                    <view class="fs28 f-color-666">
+                        <picker bindchange="bindPickerChange" data-type="cate" value="{{index}}" range="{{cateData}}" range-key='label'>
+                            <view class="picker">
+                                分类<image class="select-black pl10" src="../../image/common/select_black.png" />
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="client-pool-search-condition-right fs24 f-color-main">
+                    共108名顾客
+                </view>
+            </view>
+        </view>
+        <scroll-view class="scroll-view client-pool-list pt10" scroll-y="{{true}}" lower-threshold="1"  bindtouchstart="touchstart" bindtouchmove="touchmove">
+            <view class="placeholder"></view>
+            <view class="pull-refresh {{pull.isLoading ? 'chu' : 'jin'}}">
+                <image class="icon-refresh z-index-1" src="{{pull.loading}}" />
+                <view class="fs24 pt20 f-color-666 z-index-1">{{pull.pullText}}</view>
+            </view>
+            <view class="pr40 pl40">
+                <view class="client-pool-list-item pt20 pb20" wx:for="{{cluesData}}" wx:for-item="item" wx:for-index="key" wx:key="key" bindtap="toCustomerDetails">
+                    <view class="client-pool-list-item-img pr40">
+                        <image src="https://wx.qlogo.cn/mmopen/vi_32/a2G20RAuIMOjLBa9dDYfICADAIuqiciaM2gfpYr1jD1sgiaDITdYWFLAToXuzPbPFhhxEOjeAZxibq8lYoNgicDnunw/132" />
+                    </view>
+                    <view class="client-pool-list-item-info">
+                        <view class="client-pool-list-item-info-name uniline">wang...</view>
+                        <view class="client-pool-list-item-info-data">
+                            <view class="client-pool-list-item-info-time lh2-5 fs24 f-color-main uniline">{{item.date}}活跃</view>
+                            <view class="client-pool-list-item-info-source lh2-5 fs24 f-color-666 uniline">来源: 你是扫码进来的吗</view>
+                        </view>
+                    </view>
+                    <view class="client-pool-list-item-status">
+                        <view wx:if="{{key%2}}" class="status fs16 f-color-fff pt6 pr10 pb6 pl10">New</view>
+                        <view wx:else class="status fs16 f-color-fff pt6 pr10 pb6 pl10">手机号</view>
+                        <image class="icon-right ml20" src="../../image/common/icon_right.png" />
+                    </view>
+                </view>
+            </view>
+            <view class="pull-refresh">
+                <image class="icon-refresh z-index-1" wx:if="{{push.isLoading}}" src="{{push.loading}}" />
+                <view class="fs24 f-color-666 z-index-1">{{push.pullText}}</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "商品",
+    "usingComponents": {
+        "tab-nav-roll": "../../components/tab-nav-roll/tab-nav-roll",
+        "scroll-y": "../../components/scroll-y/scroll-y"
+    },
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+}

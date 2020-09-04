@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="logo">
+        <image src="../../image/login/defPic.png" />
+    </view>
+    <view class="user-info">
+      <form class="user-info-form" bindsubmit='submitForm'>
+        <view class="user-info-item">
+          <view class="login-title">账号</view>
+          <input placeholder="请输入账号" name="userName" bindinput="bindUserNameInput"/>
+        </view>
+        <view class="user-info-item">
+          <view class="login-title">密码</view>
+          <input type="password" placeholder="请输入密码" name="password" bindinput="bindPasswordInput"/>
+        </view>
+        <view class="user-info-item login-button">
+          <button form-type='submit' hover-class="none"> 登 录 </button>
+        </view>
+      </form>
+    </view>
+</view>

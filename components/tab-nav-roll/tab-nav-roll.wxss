@@ -1,0 +1,32 @@
+.trigger-number{
+    position: relative;
+    height: 80rpx;
+    white-space: nowrap;
+}
+.trigger-number-item{
+    display: inline-block;
+    text-align: center;
+    line-height: 80rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+.trigger-number-item2{
+    width: 50%;
+}
+.trigger-number-item3{
+    width: 30%;
+}
+.trigger-number-item-text{
+    position: relative;
+    display: inline;
+}
+.tab-bottom-line{
+    height: 4rpx;
+    background: #bb7d41;
+    position: absolute;
+    left: 0;
+    top: 75rpx;
+}
+/* .active{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAALCAYAAABMMrJKAAAA1UlEQVRYhe2VYQ7CIAyFa+L9/+xAnsSjtM8gBQqiydRtwHjJ0kI2SPrt5V3utwU0sAD4R8RUIXFVQmVf2a19L8xpv3xPiu/hewj0bBBB0t1wI95+zNcRMT6HZyBKHHYJMcEDK8Ri/Q5c2Isg7Q+zI0CrgWBCnQEdMCoQg+tML5w58pML04+BHGLc2x+gVfcwc0dUhv8CkgtHKtCKA+05aa33BPdp34K6hHmmHFyjbmCeNQfXqHGYMwfXqEmYMwe/UzMwZw7+rkNhzhz8rw6AOXNwExHRA6NCWTurLNEkAAAAAElFTkSuQmCC) 0rpx 25rpx no-repeat;
+} */

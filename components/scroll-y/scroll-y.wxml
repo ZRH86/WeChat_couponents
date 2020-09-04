@@ -1,0 +1,13 @@
+<view class="container">
+	<scroll-view class="message scroll-view client-pool-list" scroll-y="{{true}}" lower-threshold="1" bindtouchstart="touchstart" bindtouchmove="touchmove">
+		<view class="pull-refresh {{pull.isLoading ? 'chu' : 'jin'}}" id="pull-refresh">
+			<image class="icon-refresh z-index-1" src="{{pull.loading}}" />
+			<view class="fs24 pt20 f-color-666 z-index-1">{{pull.pullText}}</view>
+		</view>
+		<slot></slot>
+		<view class="pull-refresh">
+			<image class="icon-refresh z-index-1" wx:if="{{push.isLoading}}" src="{{push.loading}}" />
+			<view class="fs24 f-color-666 z-index-1">{{push.pullText}}</view>
+		</view>
+	</scroll-view>
+</view>

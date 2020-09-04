@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "~~~",
+    "usingComponents": {
+        "tab-nav-roll": "../../components/tab-nav-roll/tab-nav-roll",
+        "scroll-y": "../../components/scroll-y/scroll-y",
+        "login-authorization": "../../components/login-authorization/login-authorization"
+    },
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+}

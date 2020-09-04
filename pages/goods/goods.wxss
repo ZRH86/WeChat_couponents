@@ -1,0 +1,140 @@
+.goods-container {
+  display: flex;
+}
+.goods-container .goods-nav {
+  position: absolute;
+  left: 0;
+  right: 150rpx;
+  top: 0;
+  bottom: 0;
+  width: 150rpx;
+  height: 100%;
+  border-right: 2rpx solid #eee;
+}
+.goods-container .goods-nav .goods-nav-item {
+  line-height: 3em;
+  font-size: 26rpx;
+  color: #999;
+  display: flex;
+}
+.goods-container .goods-nav .goods-nav-item .goods-nav-item-left {
+  width: 10rpx;
+  height: 3em;
+}
+.goods-container .goods-nav .goods-nav-item-active {
+  background: rgba(176, 131, 81, 0.5);
+  color: #fff;
+}
+.goods-container .goods-nav .goods-nav-item-active .goods-nav-item-left {
+  background: linear-gradient(to right, #ddbf93, #b08351);
+}
+.goods-container .goods {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 150rpx;
+}
+.goods-container .goods .scroll-view .goods-item {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.goods-container .goods .scroll-view .goods-item .goods-item-img {
+  display: flex;
+  justify-content: center;
+}
+.goods-container .goods .scroll-view .goods-item .goods-item-img .goods-img {
+  width: 95%;
+  height: auto;
+}
+.goods-container .goods .scroll-view .goods-item .goods-shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goods-container .goods .scroll-view .goods-item .goods-shop .shop-card {
+  width: 60rpx;
+  height: 60rpx;
+}
+.goods-container .goods .scroll-view .goods-item .goods-shop .red {
+  color: red;
+}
+.goods-container .bus {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  left: 80%;
+  top: 80%;
+  background: rgba(120, 188, 255, 0.6);
+  border: 1rpx solid rgba(0, 116, 255, 0.61);
+  border-radius: 50%;
+}
+.goods-container .bus image {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.goods-container .bus .count {
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  background: #ff4611;
+  padding: 0 12rpx;
+  border-radius: 20rpx;
+  color: #fff;
+  position: absolute;
+  left: 68rpx;
+  top: 0;
+}
+.goods-container .scale {
+  background: rgba(120, 188, 255, 0.3);
+  border: 1rpx solid rgba(0, 116, 255, 0.4);
+}
+.goods-container .scale image {
+  transform: scale(1.2);
+}
+.goods-container .good_box {
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  border: 2rpx solid rgba(0, 116, 255, 0.61);
+  background: rgba(120, 188, 255, 0.2);
+}
+.goods-container .good_box image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.goods-container .goods_hover {
+  transform: scale(0.95);
+}
+@keyframes mymove {
+  0% {
+    transform: rotate(50deg);
+  }
+  25% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(150deg);
+  }
+  75% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

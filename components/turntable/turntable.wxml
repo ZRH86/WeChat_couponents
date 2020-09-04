@@ -1,0 +1,26 @@
+<view class="canvas-container">
+	<view animation="{{animationData}}" class="gb-wheel-content" style='width:{{size-2}}rpx;height:{{size}}rpx;'>
+		<!-- 扇形颜色背景 当选项长度等于2或者3时做了特殊处理 -->
+		<view class="canvas-list">
+			<view class="canvas-item2" wx:for="{{awardsConfig.awards}}" wx:key="key" style="transform: rotate({{item.item2Deg}});background-color:{{awardsConfig.awards.length==2?item.color:''}};opacity:{{awardsConfig.awards.length==2?item.opacity:awardsConfig.awards.length==3?item.opacity:''}};width:{{size}}rpx;height:{{size/2-2}}rpx;transform-origin:{{size/2}}rpx {{size/2}}rpx">
+				<view class="canvas-item2-after" style="transform: rotate({{item.afterDeg}});background-color:{{item.color}};opacity:{{awardsConfig.awards.length==3?'':item.opacity}};width:{{size/2}}rpx;height:{{size/2}}rpx;transform-origin: {{size/2}}rpx {{size/2}}rpx"></view>
+				<view wx:if='{{awardsConfig.awards.length==3}}' class="canvas-item2-after" style="background-color:{{item.color}};width:{{size/2}}rpx;height:{{size/2}}rpx;transform-origin: {{size/2}}rpx {{size/2}}rpx"></view>
+			</view>
+		</view>
+		<!-- 选项内容 -->
+		<view class="gb-wheel-list">
+			<view class="gb-wheel-item" data-index="{{index}}" wx:for="{{awardsConfig.awards}}" wx:key='key'>
+				<view class="gb-wheel-icontent" style="height:262rpx;overflow:hidden;font-size:{{item.name.length>9?'20':'26'}}rpx;line-height:{{item.name.length>9?'20':'26'}}rpx;width:26rpx;padding-top:5rpx;transform: rotate({{index*turnNum}}turn);transform-origin: 50% {{size/2-2}}rpx">
+					<view style='word-break:break-all; font-size:20rpx'><icon class="cuIcon-like"></icon>{{item.name}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="img-container" style='width:100%;height:{{size}}rpx;'>
+		<!-- 转盘中间的按钮 -->
+		<image bindtap="_zhuan" src='https://gamesdata.oss-cn-hangzhou.aliyuncs.com/xiaojueding/canvas_button_go_unclick.png' style='width:{{size/4.4}}rpx;display:{{block1}};margin-top:16rpx' mode='widthFix'></image>
+		<image src='https://gamesdata.oss-cn-hangzhou.aliyuncs.com/xiaojueding/canvas_button_go_click.png' style='width:{{size/4.4}}rpx;display:{{block2}};margin-top:16rpx' mode='widthFix'></image>
+		<image bindtap="reset" src='https://gamesdata.oss-cn-hangzhou.aliyuncs.com/xiaojueding/canvas_button_reset_unclick.png' style='width:{{size/4.4}}rpx;display:{{block3}};margin-top:16rpx' mode='widthFix'></image>
+		<image src='https://gamesdata.oss-cn-hangzhou.aliyuncs.com/xiaojueding/canvas_button_reset_click.png' style='width:{{size/4.4}}rpx;display:{{block4}};margin-top:16rpx' mode='widthFix'></image>
+	</view>
+</view>

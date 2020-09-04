@@ -1,0 +1,145 @@
+.client-pool {
+    position: relative;
+    flex: 1;
+}
+.client-pool-search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 99;
+}
+.client-pool-search-body {
+    display: flex;
+    align-items: center;
+    height: 70rpx;
+    background: #f5f5f5;
+}
+
+.client-pool-search-body input {
+    flex: 1;
+}
+
+.client-pool-search-condition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2rpx solid #f5f5f5;
+}
+
+.client-pool-search-condition-left {
+    display: flex;
+}
+
+.select-black {
+    width: 24rpx;
+    height: 12rpx;
+}
+
+.praise-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.praise {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.praise-mini {
+    width: 40rpx;
+    height: 35rpx;
+}
+
+.client-pool-list {
+    position: absolute;
+    top: 0rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.scroll-view {
+    position: absolute;
+    box-sizing: border-box;
+}
+.placeholder{
+    height: 180rpx;
+    width: 100%;
+}
+.client-pool-list-item {
+    position: relative;
+    width: 100%;
+    padding-right: 130rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 2rpx solid #f5f5f5;
+    box-sizing: border-box;
+}
+
+.client-pool-list-item-img {
+    width: 100rpx;
+}
+
+.client-pool-list-item-img image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 500rpx;
+    border: 4rpx solid #fff;
+    box-shadow: 2rpx 10rpx 20rpx #ccc;
+}
+
+.client-pool-list-item-info {
+    flex: 1;
+    width: 250rpx;
+}
+
+.client-pool-list-item-info-data {
+    display: flex;
+}
+
+.client-pool-list-item-info-time {
+    width: 200rpx;
+}
+
+.client-pool-list-item-info-source {
+    width: 220rpx;
+}
+
+.client-pool-list-item-status {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 130rpx;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.client-pool-list-item-status>.status {
+    background: #E70012;
+    border-radius: 500rpx;
+}
+
+.pull-refresh {
+    height: 140rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.chu {
+    height: 110rpx;
+}
+
+.jin {
+    height: 0rpx;
+}

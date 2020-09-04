@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "消息",
+    "usingComponents": {
+        "scroll-y": "../../components/scroll-y/scroll-y",
+        "turntable": "../../components/turntable/turntable"
+    },
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+}

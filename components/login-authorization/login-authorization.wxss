@@ -1,0 +1,61 @@
+.login-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.login-mask .login-tip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.login-mask .login-tip .login-tip-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 30rpx;
+}
+.login-mask .login-tip .login-tip-content .login-tip-text {
+  line-height: 1.5em;
+  font-size: 30rpx;
+}
+.login-mask .login-tip .login-tip-content .login-image {
+  width: 400 rpx;
+}
+.login-mask .login-tip-btn {
+  display: flex;
+  width: 100%;
+}
+.login-mask .login-tip-btn .button {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  color: #666;
+  border: 1rpx solid #eee;
+}
+.login-mask .login-tip-btn .button .get-user-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.login-mask .login-tip-btn .active {
+  color: #b08351;
+  border-left: 1rpx solid #eee;
+}

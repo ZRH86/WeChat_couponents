@@ -1,0 +1,6 @@
+<scroll-view scroll-x="true" :scroll-with-animation="true" scroll-left="{{scrollLeft}}" class="trigger-number" enable-flex="{{true}}">
+	<view class="trigger-number-item fs30 {{'trigger-number-item' + tabData.length}}" wx:for="{{tabData}}" wx:key="{{item.type}}" bindtap="tabChange" data-index="{{index}}" data-item="{{item}}" wx:key="index">
+		<view class="trigger-number-item-text fs34 pb10 {{tabType == item.type ? 'active' : ''}}">{{item.name}}</view>
+	</view>
+	<div class="tab-bottom-line" style="width: {{lineWidth * 2}}rpx" animation="{{animationLine}}"></div>
+</scroll-view>
